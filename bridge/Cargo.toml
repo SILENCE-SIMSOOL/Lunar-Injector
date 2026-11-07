@@ -1,0 +1,14 @@
+[package]
+name = "lunar-bridge"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+name = "lunar_bridge"
+crate-type = ["cdylib"]
+
+[dependencies]
+lunar-shared = { path = "../shared" }
+serde_json.workspace = true
+jvmti-bindings = "=3.0.2"
+windows-sys.workspace = true

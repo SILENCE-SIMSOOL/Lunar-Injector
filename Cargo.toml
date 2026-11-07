@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = ["app", "bridge", "shared"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["SimSool"]
+description = "A fast, lightweight, and modern Lunar Client 1.8.9 injector and utility tool built with Rust and egui."
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+windows-sys = { version = "=0.52.0", features = [
+	"Win32_Foundation",
+	"Win32_System_Threading",
+	"Win32_System_Diagnostics_Debug",
+	"Win32_System_LibraryLoader",
+	"Win32_System_Memory",
+	"Win32_System_SystemServices",
+	"Win32_UI_WindowsAndMessaging",
+	"Win32_UI_Input_KeyboardAndMouse",
+] }
